@@ -1,11 +1,18 @@
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div  style={{ backgroundColor: "red", height: "100vh" }}>
-      <h1 style={{ textAlign: "center", marginTop: "50px" }}>
-        Hello from Accentuate 👋
-      </h1>
+     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+      <Navbar />
+      <main className="flex-grow">
+        <Home />
+      </main>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+ 
