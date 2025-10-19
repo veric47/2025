@@ -1,7 +1,14 @@
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#003366", color: "white", padding: "1rem", textAlign: "center" }}>
-      <p>© {new Date().getFullYear()} Accentuate Integrated Services Ltd</p>
+    <footer style={{
+      backgroundColor: "#003366",
+      color: "white",
+      textAlign: "center",
+      padding: "1rem",
+      marginTop: "2rem"
+    }}>
+      <p>© {new Date().getFullYear()} Accentuate Integrated Services Limited</p>
+      <p>6 Lolo Street, Ozuboko, Port Harcourt | accentuate.integrated@gmail.com</p>
     </footer>
   );
 }
