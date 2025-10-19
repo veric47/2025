@@ -1,11 +1,17 @@
 export default function About() {
   return (
-    <section className="py-20 text-center bg-gray-50">
-      <h1 className="text-3xl font-bold text-blue-900 mb-6">About Us</h1>
-      <p className="max-w-2xl mx-auto text-gray-700">
-        Accentuate Integrated Services Limited is a multidisciplinary company
-        providing services in engineering, construction, procurement, and energy consulting.
-        We are committed to delivering excellence with integrity and innovation.
+    <section style={{
+      textAlign: "center",
+      padding: "4rem 1rem",
+      backgroundColor: "#ffffff"
+    }}>
+      <h1 style={{ color: "#003366", fontSize: "2rem", fontWeight: "bold" }}>
+        About Us
+      </h1>
+      <p style={{ fontSize: "1.1rem", marginTop: "1rem", color: "#555", maxWidth: "700px", margin: "0 auto" }}>
+        Accentuate Integrated Services Limited is a multidisciplinary company providing
+        professional services in Engineering, Construction, Procurement, and Energy Consulting.
+        Our commitment is to deliver excellence with integrity and innovation.
       </p>
     </section>
   );
