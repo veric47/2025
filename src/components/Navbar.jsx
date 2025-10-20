@@ -1,48 +1,37 @@
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  return (
-    <nav className="bg-blue-900 text-white py-4 shadow-md">
-      <div className="max-w-6xl mx-auto flex justify-between items-center px-6">
-        {/* Logo / Company Name */}
-        <Link to="/" className="text-2xl font-bold tracking-wide">
-          Accentuate
-        </Link>
+  const navStyle = {
+    backgroundColor: "#003366",
+    color: "white",
+    padding: "1rem 2rem",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center"
+  };
 
-        {/* Navigation Links */}
-        <ul className="flex space-x-8 text-sm md:text-base">
-          <li>
-            <Link to="/" className="hover:text-yellow-400 transition-colors">
-              Home
+  const linkContainer = {
+    display: "flex",
+    gap: "2rem", // space between items
+  };
+
+  return (
+    <nav style={navStyle}>
+      <Link to="/" style={{ fontSize: "1.5rem", fontWeight: "bold", color: "white", textDecoration: "none" }}>
+        Accentuate
+      </Link>
+      <ul style={linkContainer}>
+        {["Home", "About", "Services", "Projects", "Team", "Contact"].map((item) => (
+          <li key={item}>
+            <Link
+              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              {item}
             </Link>
           </li>
-          <li>
-            <Link to="/about" className="hover:text-yellow-400 transition-colors">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/services" className="hover:text-yellow-400 transition-colors">
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects" className="hover:text-yellow-400 transition-colors">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/team" className="hover:text-yellow-400 transition-colors">
-              Team
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="hover:text-yellow-400 transition-colors">
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
+        ))}
+      </ul>
     </nav>
   );
 }
