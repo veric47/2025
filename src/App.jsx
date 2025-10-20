@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
-
+import App from "./pages/App";
 function App() {
   return (
     <Router>
