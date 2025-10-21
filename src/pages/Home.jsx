@@ -5,6 +5,9 @@ export default function Home() {
       padding: "4rem 1rem",
       backgroundColor: "#f9fafb"
     }}>
+      <style>
+          background-color: #e58ce9;
+      </style>
       <h1 style={{ color: "#003366", fontSize: "2rem", fontWeight: "bold" }}>
         Accentuate Integrated Services Limited
       </h1>
