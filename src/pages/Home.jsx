@@ -3,18 +3,14 @@ export default function Home() {
     <section style={{
       textAlign: "center",
       padding: "4rem 1rem",
-      backgroundColor: "#f9fafb"
+      backgroundColor: "#e58ce9" // <-- Change to your desired color!
     }}>
-      <style>
-          background-color: #e58ce9;
-      </style>
       <h1 style={{ color: "#003366", fontSize: "2rem", fontWeight: "bold" }}>
         Accentuate Integrated Services Limited
       </h1>
       <p style={{ fontSize: "1.2rem", marginTop: "1rem", color: "#555" }}>
         Engineering | Construction | Procurement | Energy Consulting
       </p>
-
       <div style={{ marginTop: "3rem", lineHeight: "1.6" }}>
         <h2 style={{ color: "#003366", fontSize: "1.5rem", fontWeight: "bold" }}>
           Our Mission
@@ -23,7 +19,6 @@ export default function Home() {
           To provide the best of service with integrity and ensure provision of
           consistent added value for our Clients and Team with global best practices.
         </p>
-
         <h2 style={{ color: "#003366", fontSize: "1.5rem", fontWeight: "bold", marginTop: "2rem" }}>
           Our Vision
         </h2>
@@ -31,7 +26,6 @@ export default function Home() {
           Ensure all-round unique service delivery that makes us the first-choice
           call for clients and employees.
         </p>
-
         <h2 style={{ color: "#003366", fontSize: "1.5rem", fontWeight: "bold", marginTop: "2rem" }}>
           Core Values
         </h2>
