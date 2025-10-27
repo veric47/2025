@@ -21,7 +21,7 @@ export default function Navbar() {
         Accentuate
       </Link>
       <ul style={linkContainer}>
-        {["Home", "About", "Services", "Projects", "Team", "Contact"].map((item) => (
+        {["Home", "About", "Service", "Projects", "Team", "Contact"].map((item) => (
           <li key={item}>
             <Link
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
