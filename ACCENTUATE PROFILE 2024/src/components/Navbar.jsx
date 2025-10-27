@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const navStyle = {
-    backgroundColor: "#e58ce9",
+    backgroundColor: "#003366",
     color: "white",
     padding: "1rem 2rem",
     display: "flex",
@@ -21,7 +21,7 @@ export default function Navbar() {
         Accentuate
       </Link>
       <ul style={linkContainer}>
-        {["Home", "About", "Service", "Projects", "Team", "Contact"].map((item) => (
+        {["Home", "About", "Services", "Projects", "Team", "Contact"].map((item) => (
           <li key={item}>
             <Link
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
