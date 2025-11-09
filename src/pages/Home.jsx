@@ -3,7 +3,7 @@ export default function Home() {
     <section style={{
       textAlign: "center",
       padding: "4rem 1rem",
-      backgroundColor: "#003366" // <-- Change to your desired color!
+      backgroundColor: "#ffffff" // <-- Change to your desired color!
     }}>
       <h1 style={{ color: "#003366", fontSize: "2rem", fontWeight: "bold" }}>
         Accentuate Integrated Services Limited
