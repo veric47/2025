@@ -23,7 +23,6 @@ export default function Team() {
       <li>Aguonye George – Architect</li>
     </ul>
   </div>
-);
     </section>
   );
 }
