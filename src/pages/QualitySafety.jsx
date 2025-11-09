@@ -1,13 +1,24 @@
-// src/pages/QualitySafety.js
-import React from "react";
-const QualitySafety = () => (
-  <div>
-    <h2>Quality & Safety</h2>
-    <h4>Quality Assurance</h4>
-    <p>Total Quality Management (TQM), global best practices, project audits, continuous improvement.</p>
-
-    <h4>Health, Safety & Environment</h4>
-    <p>Compliance with local standards, staff training, workplace safety awareness and stewardship.</p>
-  </div>
-);
-export default QualitySafety;
+export default function QualitySafety() {
+  return (
+    <section style={{
+      textAlign: "center",
+      padding: "4rem 1rem",
+      backgroundColor: "#f9fafb"
+    }}>
+      <h1 style={{ color: "#003366", fontSize: "2rem", fontWeight: "bold" }}>
+        Quality & Safety
+      </h1>
+      <div style={{ marginTop: "2rem", textAlign: "left", maxWidth: 600, marginLeft: "auto", marginRight: "auto", color: "#333" }}>
+        <h3>Quality Assurance</h3>
+        <p>
+          Total Quality Management (TQM), rigorous project audits, and continuous improvement processes ensure our projects meet the highest global standards and client expectations.
+        </p>
+        
+        <h3>Health, Safety & Environment</h3>
+        <p>
+          We comply strictly with local safety and environmental standards, extend staff training programs, and promote workplace safety and corporate stewardship across all operations.
+        </p>
+      </div>
+    </section>
+  );
+}
