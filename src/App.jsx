@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <nav style={{ padding: "20px", background: "#003366" }}>
+      <nav style={{ padding: "20px", background: "#0c60b5ff" }}>
         <Link to="/">Home</Link> |{" "}
         <Link to="/about">About</Link> |{" "}
         <Link to="/services">Services</Link> |{" "}
