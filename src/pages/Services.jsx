@@ -9,10 +9,17 @@ export default function Services() {
         Our Services
       </h1>
       <ul style={{ marginTop: "2rem", lineHeight: "2", color: "#333" }}>
-        <li>Procurement & Logistics</li>
-        <li>Engineering & Construction</li>
-        <li>Project Management</li>
-        <li>Energy Consulting</li>
+        <li>Construction</li>
+      <li>Procurement</li>
+      <li>Energy Consulting</li>
+      <li>Equipment Leasing</li>
+      <li>Pipeline Maintenance</li>
+      <li>Marine & Oil/Gas Support</li>
+      <li>Project Management</li>
+      <li>Engineering & Design</li>
+      <li>Logistics (Warehousing, Marine Transport, Haulage)</li>
+      <li>Technical Assistance, Equipment Leasing</li>
+      <li>Training, Supply of Vehicles/Vessels</li>
       </ul>
     </section>
   );

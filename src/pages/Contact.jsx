@@ -1,3 +1,6 @@
+// src/pages/Contact.js
+import React from "react";
+
 export default function Contact() {
   return (
     <section style={{
@@ -8,15 +11,25 @@ export default function Contact() {
       <h1 style={{ color: "#003366", fontSize: "2rem", fontWeight: "bold" }}>
         Contact Us
       </h1>
-      <p style={{ marginTop: "1rem", color: "#555" }}>
-        📍 6 Lolo Street, Ozuboko, Port Harcourt
-      </p>
-      <p style={{ color: "#555" }}>
-        📧 accentuate.integrated@gmail.com
-      </p>
-      <p style={{ color: "#555" }}>
-        📞 +234 803 123 4567
-      </p>
+      <div style={{ marginTop: "2rem" }}>
+        <p style={{ color: "#555" }}>
+          📍 <strong>6 Lolo Street, Ozuboko, Port Harcourt</strong>
+        </p>
+        <p style={{ color: "#555" }}>
+          📍 <strong>5 Kilo Street, Aguda Surulere, Lagos</strong>
+        </p>
+        <p style={{ color: "#555" }}>
+          📍 <strong>Flat 8, Sunday Adewusi Housing Estate, Dakwa, Abuja</strong>
+        </p>
+        <p style={{ color: "#555", marginTop: "1rem" }}>
+          📧 <a href="mailto:accentuate.integrated@gmail.com" style={{ color: "#003366", textDecoration: "underline" }}>
+            accentuate.integrated@gmail.com
+          </a>
+        </p>
+        <p style={{ color: "#555", marginTop: "0.5rem" }}>
+          📞 <strong>+234 703 4008 985</strong>
+        </p>
+      </div>
     </section>
   );
 }

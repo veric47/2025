@@ -12,6 +12,18 @@ export default function Projects() {
         We have executed a range of projects including facility renovations, borehole installations,
         equipment supplies, and construction works across various sectors.
       </p>
+      <div>
+    <h2>Completed Projects</h2>
+    <ul>
+      <li>Solar boreholes - Federal University Wukari</li>
+      <li>Solar street lights - Yobe State</li>
+      <li>University medical center renovation</li>
+      <li>Civil construction - Port Harcourt, Asaba</li>
+      <li>Office renovations - Bonny Channel</li>
+      <li>Heavy equipment leasing - Port Harcourt</li>
+      <li>Billboard construction, apartment services</li>
+    </ul>
+  </div>
     </section>
   );
 }

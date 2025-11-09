@@ -12,6 +12,18 @@ export default function Team() {
         Our management team consists of highly skilled professionals committed to quality,
         safety, and innovation across all our projects.
       </p>
+    <div>
+    <h2>Management Team</h2>
+    <ul>
+      <li>Ibrahim Salahudeen – Partner, Operations</li>
+      <li>Muaz Obadaki – Partner, Strategy</li>
+      <li>Suleiman Obadaki – Principal Partner</li>
+      <li>Ibrahim Yusuf – CFO</li>
+      <li>Rukayya Salihu – Legal Adviser</li>
+      <li>Aguonye George – Architect</li>
+    </ul>
+  </div>
+);
     </section>
   );
 }
