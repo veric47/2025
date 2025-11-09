@@ -8,7 +8,6 @@ import Projects from "./pages/Projects";
 import Team from "./pages/Team";
 import QualitySafety from "./pages/QualitySafety";
 import Contact from "./pages/Contact";
-import QualitySafety from "./pages/QualitySafety";
 
 function App() {
   return (
