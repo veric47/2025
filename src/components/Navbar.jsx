@@ -25,7 +25,7 @@ export default function Navbar() {
           <li key={item}>
             <Link
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              style={{ color: "black", textDecoration: "none" }}
+              style={{ color: "white", textDecoration: "none" }}
             >
               {item}
             </Link>
