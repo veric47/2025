@@ -1,3 +1,24 @@
 body{
     background: #003366;
 }
+.light-mode {
+  background: #f8faff;
+  color: #222;
+  transition: background 0.4s, color 0.4s;
+}
+
+.dark-mode {
+  background: #101622;
+  color: #f6f6f6;
+  transition: background 0.4s, color 0.4s;
+}
+
+.dark-mode a, .dark-mode nav {
+  color: #fff !important;
+  background: #101622 !important;
+}
+
+.dark-mode footer {
+  background: #191f2b !important;
+  color: #ffe;
+}
