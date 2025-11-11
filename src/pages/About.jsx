@@ -9,23 +9,10 @@ export default function About() {
         About Us
       </h1>
       <p style={{ fontSize: "1.1rem", marginTop: "1rem", color: "#555", maxWidth: "700px", margin: "0 auto" }}>
-        Accentuate Integrated Services Limited has set itself at the
-fore front of engineering by providing responsive solutions
-and professionalism through the use of state-of-the art
-technologies, skilled manpower, and a well thought out
-structure that enhances productivity.
-Registered in 2007 with Corporate Affairs Commission
-(CAC), with RC Number 685091, Accentuate Integrated
-Services Limited is into Construction, Procurement, Energy
-Consulting, Equipment Leasing, Pipeline Maintenance,
-Marine Support Services, Oil and Gas Support Services.
-The firm has over the years acquired a strong capacity to
-execute medium to large scale projects from feasibility
-through design and contract administration to completion
-and project handover.
-As a service oriented organization, we strive to provide
-value and meet our client expectations, promptly and
-efficiently.
+         Here’s a concise summary of your provided text:
+Accentuate Integrated Services Limited** is a leading engineering firm registered in 2007 (CAC RC Number 685091). 
+The company delivers responsive and professional solutions in Construction, Procurement, Energy Consulting, Equipment Leasing, Pipeline Maintenance, Marine Support, and Oil & Gas Services. 
+Using advanced technologies and skilled manpower, Accentuate executes medium to large-scale projects from feasibility to completion, always striving to meet client expectations efficiently and effectively.
       </p>
     </section>
   );
