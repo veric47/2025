@@ -48,7 +48,7 @@ export default function About() {
             color: "#003366"
           }}>
             {/* Put an icon or image component here later */}
-            🌟
+            
           </div>
           <div style={{ flex: "1 1 0%" }}>
             <h2 style={{ color: "#003366", fontWeight: 700, fontSize: "1.4rem", marginBottom: "1rem" }}>
@@ -87,7 +87,7 @@ export default function About() {
             color: "#003366"
           }}>
             {/* Put an icon or image component here later */}
-            🎯
+            
           </div>
           <div style={{ flex: "1 1 0%" }}>
             <h2 style={{ color: "#003366", fontWeight: 700, fontSize: "1.4rem", marginBottom: "1rem" }}>
