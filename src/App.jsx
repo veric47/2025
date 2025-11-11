@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Team from "./pages/Team";
 import QualitySafety from "./pages/QualitySafety";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer"; // <-- import your Footer
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/quality-safety" element={<QualitySafety />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer /> {/* <-- Footer added here */}
     </Router>
   );
 }
