@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,13 +10,24 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  // 1. Theme state
-  const [darkMode, setDarkMode] = useState(false);
+  // Start with system color scheme
+  const getSystemTheme = () =>
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  // 2. Theme switch handler
+  const [darkMode, setDarkMode] = useState(getSystemTheme);
+
+  // Update theme if system changes (unless manually toggled)
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    const handler = (e) => setDarkMode(e.matches);
+    media.addEventListener('change', handler);
+    return () => media.removeEventListener('change', handler);
+  }, []);
+
+  // Manual override handler
   const toggleTheme = () => setDarkMode((prev) => !prev);
 
-  // 3. Set theme class on root div
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"} style={{ minHeight: "100vh" }}>
       <Router>
