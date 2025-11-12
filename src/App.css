@@ -9,20 +9,24 @@
   --brand-blue: #003366;
   --accent-yellow: #ffcc33;
 }
-
-.light-mode {
-  background: var(--main-bg-light);
-  color: var(--txt-light);
+ 
+.light-mode, .light-mode .themed-section {
+  background: #f8faff;
+  color: #222;
 }
-
-.dark-mode {
-  background: var(--main-bg-dark);
-  color: var(--txt-dark);
+.light-mode .themed-section, .light-mode .card {
+  background: #fff;
+  color: #222;
 }
-
-.dark-mode .card, .dark-mode .footer, .dark-mode nav {
-  background: #141a25 !important;
-  color: #ededed !important;
+.dark-mode, .dark-mode .themed-section {
+  background: #101622;
+  color: #f6f6f6;
 }
-
-/* Keep blue/yellow elements using brand variables—they don’t switch */
+.dark-mode .themed-section, .dark-mode .card {
+  background: #191f2b;
+  color: #f2f2f2;
+}
+a,
+a:visited {
+  color: #003366;
+}

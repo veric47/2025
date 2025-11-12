@@ -1,14 +1,10 @@
 export default function QualitySafety() {
   return (
-    <section style={{
-      textAlign: "center",
-      padding: "4rem 1rem",
-      backgroundColor: "#f9fafb"
-    }}>
+    <section className="themed-section" style={{ textAlign: "center", padding: "4rem 1rem" }}>
       <h1 style={{ color: "#003366", fontSize: "2rem", fontWeight: "bold" }}>
         Quality & Safety
       </h1>
-      <div style={{ marginTop: "2rem", textAlign: "left", maxWidth: 600, marginLeft: "auto", marginRight: "auto", color: "#333" }}>
+      <div style={{ marginTop: "2rem", textAlign: "left", maxWidth: 600, marginLeft: "auto", marginRight: "auto" }}>
         <h3>Quality Assurance</h3>
         <p>
           Total Quality Management (TQM), rigorous project audits, and continuous improvement processes ensure our projects meet the highest global standards and client expectations.

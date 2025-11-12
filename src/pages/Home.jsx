@@ -1,15 +1,7 @@
 export default function Home() {
   return (
-    <section style={{
-      backgroundColor: "#f8faff",
-      minHeight: "100vh",
-      padding: "0",
-      fontFamily: "inherit"
-    }}>
-      {/* Hero Section */}
-      <div style={{
-        background: "linear-gradient(90deg, #003366 60%, #f8faff 100%)",
-        color: "#fff",
+    <section className="themed-section" style={{ minHeight: "100vh", padding: "0", fontFamily: "inherit" }}>
+      <div className="hero-section" style={{
         padding: "4rem 1rem 3rem 1rem",
         textAlign: "left",
         borderBottomLeftRadius: "60px",
@@ -24,7 +16,7 @@ export default function Home() {
             fontWeight: 400,
             marginTop: "1.5rem",
             maxWidth: "600px",
-            color: "#d6e7fa"
+            color: "inherit"
           }}>
             Empowering your success with innovative engineering and turnkey solutions in Construction, Procurement, Energy Consulting, and beyond.
           </p>
@@ -45,7 +37,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Quick Service Highlights */}
       <div style={{
         display: "flex",
         gap: "2rem",
@@ -73,8 +64,7 @@ export default function Home() {
             icon: "🤝"
           }
         ].map(({ title, desc, icon }) => (
-          <div key={title} style={{
-            background: "#fff",
+          <div key={title} className="card" style={{
             borderRadius: "16px",
             boxShadow: "0 2px 12px rgba(0,51,102,0.07)",
             minWidth: "220px",
@@ -105,7 +95,7 @@ export default function Home() {
               margin: "0.3rem 0"
             }}>{title}</h3>
             <p style={{
-              color: "#444",
+              color: "inherit",
               fontSize: "1.05rem",
               margin: 0,
               textAlign: "center"
@@ -114,9 +104,7 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Explore More Section */}
-      <div style={{
-        background: "#fff",
+      <div className="card" style={{
         maxWidth: "960px",
         margin: "3rem auto 0 auto",
         padding: "2.5rem 1rem",
@@ -133,7 +121,7 @@ export default function Home() {
           Our Services
         </h2>
         <p style={{
-          color: "#555",
+          color: "inherit",
           fontSize: "1.14rem",
           marginBottom: "2.2rem",
           maxWidth: "690px",
