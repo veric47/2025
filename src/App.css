@@ -147,9 +147,11 @@ footer .footer-bottom {
   outline: none !important;
   box-sizing: border-box;
 }
-.light-mode .services-intro-title, .light-mode .services-intro-desc {
+.light-mode .section-intro-title,
+.light-mode .section-intro-desc {
   color: #101622;
 }
-.dark-mode .services-intro-title, .dark-mode .services-intro-desc {
+.dark-mode .section-intro-title,
+.dark-mode .section-intro-desc {
   color: #fff;
 }

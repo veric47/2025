@@ -40,7 +40,9 @@ export default function Projects() {
       fontFamily: "inherit"
     }}>
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-        <h1 style={{
+        <h1 
+        className="section-intro-title"
+        style={{
           color: "#fff",
           fontSize: "2.25rem",
           fontWeight: 800,
@@ -49,7 +51,9 @@ export default function Projects() {
         }}>
           Our Projects
         </h1>
-        <p style={{
+        <p 
+        className="section-intro-title"
+        style={{
           fontSize: "1.16rem",
           marginBottom: "2.8rem",
           color: "#e2ddf8",

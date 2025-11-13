@@ -41,7 +41,7 @@ export default function Services() {
     }}>
       <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "2.7rem 1rem 3rem 1rem" }}>
         {/* Page Intro */}
-        <h1 className="services-intro-title"
+        <h1 className="section-intro-title"
           style={{
             textAlign: "left",
             fontSize: "2.38rem",
@@ -50,7 +50,7 @@ export default function Services() {
           }}>
           Our Services
         </h1>
-        <p className="services-intro-desc"
+        <p className="section-intro-desc"
           style={{
             textAlign: "left",
             fontSize: "1.15rem",
@@ -142,18 +142,20 @@ export default function Services() {
         </div>
 
         {/* Centered call-to-action */}
-        <div style={{
-          background: "#19C37D",
-          color: "#191f2b",
-          borderRadius: "18px",
-          padding: "2rem 1.18rem",
-          textAlign: "center",
-          fontWeight: 700,
-          fontSize: "1.17rem",
-          margin: "2.5rem auto 0 auto",
-          boxShadow: "0 2px 8px rgba(25,195,125,0.08)",
-          maxWidth: "700px"
-        }}>
+        <div 
+          className="section-intro-title"
+          style={{
+            background: "#19C37D",
+            color: "#191f2b",
+            borderRadius: "18px",
+            padding: "2rem 1.18rem",
+            textAlign: "center",
+            fontWeight: 700,
+            fontSize: "1.17rem",
+            margin: "2.5rem auto 0 auto",
+            boxShadow: "0 2px 8px rgba(25,195,125,0.08)",
+            maxWidth: "700px"
+          }}>
           We are dedicated to prompt, professional service and custom solutions for every challenge. Explore Accentuate’s proven expertise—your project, delivered safely, on time, and to the highest quality standards.
         </div>
       </div>

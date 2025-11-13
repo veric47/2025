@@ -8,7 +8,9 @@ export default function About() {
     }}>
       <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "1.5rem 1rem 4rem 1rem" }}>
         {/* Page Title & Tagline */}
-        <h1 style={{
+        <h1 
+        className="section-intro-title"
+        style={{
           textAlign: "center",
           color: "#fff",
           fontSize: "2.8rem",
@@ -18,7 +20,9 @@ export default function About() {
         }}>
           About Accentuate Integrated Services Limited
         </h1>
-        <p style={{
+        <p 
+        className="section-intro-title"
+        style={{
           textAlign: "center",
           fontSize: "1.22rem",
           color: "#ede5fa",
