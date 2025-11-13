@@ -134,7 +134,7 @@ export default function Services() {
 
         {/* Centered call-to-action */}
         <div style={{
-          background: "#ffcc33",
+          background: "#19C37D",
           color: "#003366",
           borderRadius: "18px",
           padding: "1.6rem 1rem",
