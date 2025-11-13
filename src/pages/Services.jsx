@@ -118,7 +118,7 @@ export default function Services() {
           maxWidth: "700px"
         }}>
           We are dedicated to prompt, professional service and custom solutions for every challenge. Explore Accentuate’s proven expertise—your project, delivered safely, on time, and to the highest quality standards.
-        </div>
+        </div>  
       </div>
     </section>
   );
