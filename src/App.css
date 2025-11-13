@@ -147,3 +147,9 @@ footer .footer-bottom {
   outline: none !important;
   box-sizing: border-box;
 }
+.light-mode .services-intro-title, .light-mode .services-intro-desc {
+  color: #101622;
+}
+.dark-mode .services-intro-title, .dark-mode .services-intro-desc {
+  color: #fff;
+}

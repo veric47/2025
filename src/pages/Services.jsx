@@ -1,5 +1,4 @@
 export default function Services() {
-  // Service data: Add image for each, or leave undefined/null if unavailable
   const services = [
     {
       title: "Construction",
@@ -42,23 +41,23 @@ export default function Services() {
     }}>
       <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "2.7rem 1rem 3rem 1rem" }}>
         {/* Page Intro */}
-        <h1 style={{
-          textAlign: "left",
-          color: "#fff",
-          fontSize: "2.38rem",
-          fontWeight: 800,
-          marginBottom: "1.35rem"
-        }}>
+        <h1 className="services-intro-title"
+          style={{
+            textAlign: "left",
+            fontSize: "2.38rem",
+            fontWeight: 800,
+            marginBottom: "1.35rem"
+          }}>
           Our Services
         </h1>
-        <p style={{
-          textAlign: "left",
-          fontSize: "1.15rem",
-          color: "#ede5fa",
-          marginBottom: "2.65rem",
-          fontWeight: 500,
-          maxWidth: "600px"
-        }}>
+        <p className="services-intro-desc"
+          style={{
+            textAlign: "left",
+            fontSize: "1.15rem",
+            marginBottom: "2.65rem",
+            fontWeight: 500,
+            maxWidth: "600px"
+          }}>
           Accentuate delivers high-value engineering, procurement, energy, equipment leasing, and marine solutions. Our advanced technology, skilled manpower, and commitment to excellence drive project success for every client.
         </p>
         
