@@ -93,3 +93,8 @@ footer {
     padding: 0 !important;
   }
 }
+.navbar {
+  background: var(--brand-purple);
+  color: #fff;
+  /* ...other styles */
+}
