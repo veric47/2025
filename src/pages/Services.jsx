@@ -17,7 +17,7 @@ export default function Services() {
       title: "Energy Consulting",
       desc: "Our experts provide technical advice, feasibility studies, and implementation for renewable, conventional, and hybrid energy solutions—ensuring efficiency, sustainability, and compliance for every project.",
       icon: "💡",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+      image: "https://www.stanleyconsultants.com/images/default-source/about-career-pages/energy-utilities-approach.jpg?sfvrsn=3d792255_2"
     },
     {
       title: "Equipment Leasing",
