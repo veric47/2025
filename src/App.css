@@ -3,100 +3,120 @@
   --main-bg-dark: #101622;
   --txt-light: #222;
   --txt-dark: #f6f6f6;
-  --brand-purple: #6C36A9;      /* Deep violet corporate purple */
-  --accent-yellow: #ffcc33;     /* Accent yellow */
+  --brand-purple: #6C36A9;
+  --accent-green: #19C37D;   /* Vibrant, modern green */
 }
 
-.light-mode, .light-mode .themed-section {
+body, .light-mode, .light-mode .themed-section {
   background: var(--main-bg-light);
   color: var(--txt-light);
 }
-.light-mode .themed-section, .light-mode .card {
-  background: #fff;
-  color: var(--txt-light);
-}
-
 .dark-mode, .dark-mode .themed-section {
   background: var(--main-bg-dark);
   color: var(--txt-dark);
 }
-.dark-mode .themed-section, .dark-mode .card {
-  background: #191f2b;
-  color: #f2f2f2;
-}
-
 .card, .hero-section, .themed-section {
   transition: background 0.4s, color 0.4s;
 }
-
-a, a:visited {
+a, a:visited, h1, h2, h3 {
   color: var(--brand-purple);
 }
-
+.navbar, nav {
+  background: linear-gradient(90deg, var(--brand-purple) 80%, #191f2b 100%);
+  color: #fff;
+  box-shadow: 0 2px 18px rgba(108,54,169,0.08);
+  padding: 1.15rem 2rem;
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+}
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0; padding: 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: .04em;
+  position: relative;
+  padding-bottom: 2px;
+  text-transform: capitalize;
+  border-bottom: none;
+  transition: color .3s, border-bottom .3s;
+}
+nav ul li a.active, nav ul li a:hover {
+  border-bottom: 3px solid var(--accent-green);
+  color: var(--accent-green);
+}
 a.button, button, .btn-accent {
-  background: var(--accent-yellow);
-  color: var(--brand-purple);
+  background: var(--accent-green);
+  color: #fff;
   font-weight: 700;
   border-radius: 9px;
   transition: background 0.3s, color 0.3s;
   border: none;
   padding: .85rem 2.3rem;
-  box-shadow: 0 2px 16px rgba(108,54,169,0.07); /* Use purple for shadow */
+  box-shadow: 0 2px 16px rgba(25,195,125,0.07);
   text-decoration: none;
   font-size: 1.11rem;
   cursor: pointer;
 }
-
-.hero-section {
-  background: linear-gradient(90deg, var(--brand-purple) 60%, var(--main-bg-light) 100%);
-  color: #fff;
-}
-.dark-mode .hero-section {
-  background: linear-gradient(90deg, var(--brand-purple) 60%, var(--main-bg-dark) 100%);
-  color: #fff;
-}
-
-.card {
-  box-shadow: 0 2px 15px rgba(108,54,169,0.09);
-  border-radius: 18px;
-}
-.dark-mode .card {
-  box-shadow: 0 2px 13px rgba(108,54,169,0.07);
-}
-
-h1, h2, h3 {
-  color: var(--brand-purple);
-  font-family: inherit;
-}
-
-@media (max-width: 700px) {
-  .hero-section {
-    padding: 3rem 1rem;
-    border-radius: 40px;
-  }
-  .card {
-    border-radius: 12px;
-    padding: 1.4rem .9rem;
-  }
-}
 footer {
-  font-family: inherit;
   background: var(--brand-purple);
   color: #fff;
+  border: none;
+  box-shadow: 0 -2px 18px rgba(108,54,169,0.09);
+  font-family: inherit;
+  border-radius: 0 0 0 0;
 }
-
-/* Responsive stacking for footer on mobile */
-@media (max-width: 700px) {
-  footer > div {
+footer a:hover {
+  text-decoration: underline;
+  color: var(--accent-green);
+}
+footer .footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer-section {
+  flex: 1 1 230px;
+  min-width: 220px;
+}
+footer h2, footer h3 {
+  color: var(--accent-green);
+}
+footer .footer-bottom {
+  border-top: 1px solid #37ef99;
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  text-align: center;
+  color: #f4ecfe;
+  font-size: 0.99rem;
+}
+@media (max-width: 900px) {
+  nav, .navbar {
     flex-direction: column;
+    align-items: stretch;
+    padding: 1rem 0.6rem;
+  }
+  nav ul {
+    gap: 1.3rem !important;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .footer-content {
+    flex-direction: column !important;
     gap: 1.3rem;
     padding: 0 !important;
   }
-}
-.navbar {
-  background: var(--brand-purple);
-  color: #fff;
-  /* ...other styles */
 }
 * {
   border: none !important;
