@@ -27,7 +27,7 @@ export default function About() {
         </p>
         <div style={{
           display: "inline-block",
-          background: "#ffcc33",
+          background: "#19C37D",
           color: "#003366",
           fontWeight: "bold",
           borderRadius: "40px",
