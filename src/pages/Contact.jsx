@@ -15,7 +15,7 @@ export default function Contact() {
           📍 <strong>Flat 8, Sunday Adewusi Housing Estate, Dakwa, Abuja</strong>
         </p>
         <p style={{ marginTop: "1rem" }}>
-          📧 <a href="mailto:accentuate.integrated@gmail.com" style={{ color: "#003366", textDecoration: "underline" }}>
+          📧 <a href="mailto:accentuate.integrated@gmail.com" style={{ textDecoration: "underline" }}>
             accentuate.integrated@gmail.com
           </a>
         </p>

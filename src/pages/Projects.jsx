@@ -43,7 +43,6 @@ export default function Projects() {
         <h1 
         className="section-intro-title"
         style={{
-          color: "#fff",
           fontSize: "2.25rem",
           fontWeight: 800,
           marginBottom: "1.1rem",
@@ -56,7 +55,6 @@ export default function Projects() {
         style={{
           fontSize: "1.16rem",
           marginBottom: "2.8rem",
-          color: "#e2ddf8",
           maxWidth: "720px",
           textAlign: "left"
         }}>
