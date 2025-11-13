@@ -2,16 +2,23 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const navStyle = {
-    background: "var(--brand-purple)", // Modern purple gradient or solid
-    color: "#fff",
-    padding: "1.2rem 2rem",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    boxShadow: "0 2px 18px rgba(108,54,169,0.09)",
-    position: "relative",
-    zIndex: 100
-  };
+  background: "linear-gradient(90deg, var(--brand-purple) 80%, #191f2b 100%)",
+  color: "#fff",
+  boxShadow: "0 2px 18px rgba(108,54,169,0.08)",
+  padding: "1.15rem 2rem",
+  border: "none",
+  borderRadius: "0",
+  fontFamily: "inherit",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  position: "fixed",     // KEY ADDITION
+  top: 0,
+  left: 0,
+  width: "100vw",
+  zIndex: 9999
+};
+
 
   const brandStyle = {
     fontSize: "2.1rem",

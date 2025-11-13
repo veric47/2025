@@ -44,40 +44,38 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Main Links */}
-        <div style={{ flex: "1 1 340px", minWidth: "250px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-          {/* Company Links */}
-          <div>
-            <h3 style={{ color: "#19C37D", fontWeight: 700, fontSize: "1.09rem", marginBottom: "0.65rem" }}>Company</h3>
-            <ul style={{
-              listStyle: "none", margin: 0, padding: 0, lineHeight: 2,
-              fontSize: "1.058rem", color: "#fff"
-            }}>
-              <li><a href="/about" style={{ color: "#fff", textDecoration: "none" }}>About Us</a></li>
-              <li><a href="/team" style={{ color: "#fff", textDecoration: "none" }}>Leadership</a></li>
-              <li><a href="/about" style={{ color: "#fff", textDecoration: "none" }}>Vision & Mission</a></li>
-              <li><a href="/about" style={{ color: "#fff", textDecoration: "none" }}>Certifications</a></li>
-              <li><a href="/news" style={{ color: "#fff", textDecoration: "none" }}>News & Media</a></li>
-            </ul>
-          </div>
-          {/* Services Links */}
-          <div>
-            <h3 style={{ color: "#19C37D", fontWeight: 700, fontSize: "1.09rem", marginBottom: "0.65rem" }}>Services</h3>
-            <ul style={{
-              listStyle: "none", margin: 0, padding: 0, lineHeight: 2,
-              fontSize: "1.058rem", color: "#fff"
-            }}>
-              <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Construction</a></li>
-              <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Marine Support</a></li>
-              <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Equipment Leasing</a></li>
-              <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Energy Consulting</a></li>
-              <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Procurement</a></li>
-            </ul>
-          </div>
+        {/* Company Links */}
+        <div style={{ flex: "1 1 180px", minWidth: "160px" }}>
+          <h3 style={{ color: "#19C37D", fontWeight: 700, fontSize: "1.09rem", marginBottom: "0.65rem" }}>Company</h3>
+          <ul style={{
+            listStyle: "none", margin: 0, padding: 0, lineHeight: 2,
+            fontSize: "1.058rem", color: "#fff"
+          }}>
+            <li><a href="/about" style={{ color: "#fff", textDecoration: "none" }}>About Us</a></li>
+            <li><a href="/team" style={{ color: "#fff", textDecoration: "none" }}>Leadership</a></li>
+            <li><a href="/about" style={{ color: "#fff", textDecoration: "none" }}>Vision & Mission</a></li>
+            <li><a href="/about" style={{ color: "#fff", textDecoration: "none" }}>Certifications</a></li>
+            <li><a href="/news" style={{ color: "#fff", textDecoration: "none" }}>News & Media</a></li>
+          </ul>
         </div>
 
-        {/* Resources */}
-        <div style={{ flex: "1 1 190px", minWidth: "180px" }}>
+        {/* Services Links - now 2nd column */}
+        <div style={{ flex: "1 1 180px", minWidth: "160px" }}>
+          <h3 style={{ color: "#19C37D", fontWeight: 700, fontSize: "1.09rem", marginBottom: "0.65rem" }}>Services</h3>
+          <ul style={{
+            listStyle: "none", margin: 0, padding: 0, lineHeight: 2,
+            fontSize: "1.058rem", color: "#fff"
+          }}>
+            <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Construction</a></li>
+            <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Marine Support</a></li>
+            <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Equipment Leasing</a></li>
+            <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Energy Consulting</a></li>
+            <li><a href="/services" style={{ color: "#fff", textDecoration: "none" }}>Procurement</a></li>
+          </ul>
+        </div>
+
+        {/* Resources Links - now 3rd column */}
+        <div style={{ flex: "1 1 180px", minWidth: "160px" }}>
           <h3 style={{ color: "#19C37D", fontWeight: 700, fontSize: "1.09rem", marginBottom: "0.7rem" }}>Resources</h3>
           <ul style={{
             listStyle: "none", margin: 0, padding: 0, lineHeight: 2,
@@ -91,7 +89,7 @@ export default function Footer() {
         </div>
 
         {/* Branch offices */}
-        <div style={{ flex: "1 1 300px", minWidth: "260px", display: "flex", flexDirection: "column", gap: "1.1rem" }}>
+        <div style={{ flex: "1 1 300px", minWidth: "220px", display: "flex", flexDirection: "column", gap: "1.1rem" }}>
           <h3 style={{ color: "#19C37D", fontWeight: 700, fontSize: "1.09rem", marginBottom: "0.6rem" }}>
             Our Branches
           </h3>

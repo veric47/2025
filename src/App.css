@@ -70,6 +70,12 @@ nav ul li a.active, nav ul li a:hover {
   border-bottom: 3px solid var(--accent-green);
   color: var(--accent-green);
 }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 a.button, button, .btn-accent {
   background: var(--accent-green);
   color: #fff;
