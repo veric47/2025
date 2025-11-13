@@ -1,5 +1,3 @@
-// Home.js or Home.tsx
-
 export default function Home() {
   return (
     <section
@@ -10,13 +8,13 @@ export default function Home() {
       <div
         className="hero-section"
         style={{
-          background: "linear-gradient(90deg, #0c60b5 60%, #f8faff 100%)",
+          background: "linear-gradient(90deg, #6C36A9 60%, #f8faff 100%)",
           color: "#fff",
           padding: "5rem 1.7rem 3rem 1.7rem",
           textAlign: "left",
           borderBottomLeftRadius: "65px",
           borderBottomRightRadius: "65px",
-          boxShadow: "0 4px 80px rgba(12,96,181,0.10)",
+          boxShadow: "0 4px 80px rgba(108,54,169,0.10)",
           position: "relative"
         }}
       >
@@ -47,13 +45,13 @@ export default function Home() {
             href="/contact"
             style={{
               background: "#ffcc33",
-              color: "#0c60b5",
+              color: "#6C36A9",
               fontWeight: 700,
               fontSize: "1.12rem",
               borderRadius: "9px",
               padding: "1.05rem 2.6rem",
               textDecoration: "none",
-              boxShadow: "0 6px 36px rgba(12,96,181,0.09)",
+              boxShadow: "0 6px 36px rgba(108,54,169,0.09)",
               transition: "background .3s, color .3s",
               display: "inline-block"
             }}
@@ -101,7 +99,7 @@ export default function Home() {
             style={{
               borderRadius: "18px",
               background: "#fff",
-              boxShadow: "0 2px 13px rgba(12,96,181,0.07)",
+              boxShadow: "0 2px 13px rgba(108,54,169,0.07)",
               minWidth: "240px",
               maxWidth: "340px",
               padding: "2.1rem 1.5rem",
@@ -130,7 +128,7 @@ export default function Home() {
               style={{
                 fontWeight: 700,
                 fontSize: "1.2rem",
-                color: "#0c60b5",
+                color: "#6C36A9",
                 margin: "0.3rem 0"
               }}
             >
@@ -159,13 +157,13 @@ export default function Home() {
           padding: "2.6rem 1.2rem",
           borderRadius: "22px",
           background: "#fff",
-          boxShadow: "0 2px 18px rgba(12,96,181,0.09)",
+          boxShadow: "0 2px 18px rgba(108,54,169,0.09)",
           textAlign: "center"
         }}
       >
         <h2
           style={{
-            color: "#0c60b5",
+            color: "#6C36A9",
             fontWeight: 700,
             fontSize: "1.75rem",
             marginBottom: "1.2rem"
@@ -189,13 +187,13 @@ export default function Home() {
           href="/services"
           style={{
             color: "#fff",
-            background: "#0c60b5",
+            background: "#6C36A9",
             padding: "1rem 2.4rem",
             fontWeight: 700,
             borderRadius: "10px",
             textDecoration: "none",
             fontSize: "1.13rem",
-            boxShadow: "0 2px 12px rgba(12,96,181,0.12)"
+            boxShadow: "0 2px 12px rgba(108,54,169,0.12)"
           }}
         >
           Discover More

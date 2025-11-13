@@ -3,87 +3,72 @@
   --main-bg-dark: #101622;
   --txt-light: #222;
   --txt-dark: #f6f6f6;
-  --brand-blue: #0c60b5;      /* Primary Accentuate blue */
-  --accent-yellow: #ffcc33;   /* Accent yellow */
+  --brand-purple: #6C36A9;      /* Deep violet corporate purple */
+  --accent-yellow: #ffcc33;     /* Accent yellow */
 }
 
-.light-mode,
-.light-mode .themed-section {
+.light-mode, .light-mode .themed-section {
   background: var(--main-bg-light);
   color: var(--txt-light);
 }
-.light-mode .themed-section,
-.light-mode .card {
+.light-mode .themed-section, .light-mode .card {
   background: #fff;
   color: var(--txt-light);
 }
 
-.dark-mode,
-.dark-mode .themed-section {
+.dark-mode, .dark-mode .themed-section {
   background: var(--main-bg-dark);
   color: var(--txt-dark);
 }
-.dark-mode .themed-section,
-.dark-mode .card {
+.dark-mode .themed-section, .dark-mode .card {
   background: #191f2b;
   color: #f2f2f2;
 }
 
-.card,
-.hero-section,
-.themed-section {
-  transition:
-    background 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+.card, .hero-section, .themed-section {
+  transition: background 0.4s, color 0.4s;
 }
 
-/* Brand colors for headings, links, accents */
-a,
-a:visited {
-  color: var(--brand-blue);
+a, a:visited {
+  color: var(--brand-purple);
 }
 
-/* Button accent styling */
 a.button, button, .btn-accent {
   background: var(--accent-yellow);
-  color: var(--brand-blue);
+  color: var(--brand-purple);
   font-weight: 700;
   border-radius: 9px;
   transition: background 0.3s, color 0.3s;
   border: none;
   padding: .85rem 2.3rem;
-  box-shadow: 0 2px 16px rgba(12,96,181,0.07);
+  box-shadow: 0 2px 16px rgba(108,54,169,0.07); /* Use purple for shadow */
   text-decoration: none;
   font-size: 1.11rem;
   cursor: pointer;
 }
 
-/* Hero section adaptive gradient and text */
 .hero-section {
-  background: linear-gradient(90deg, var(--brand-blue) 60%, var(--main-bg-light) 100%);
+  background: linear-gradient(90deg, var(--brand-purple) 60%, var(--main-bg-light) 100%);
   color: #fff;
 }
 .dark-mode .hero-section {
-  background: linear-gradient(90deg, var(--brand-blue) 60%, var(--main-bg-dark) 100%);
+  background: linear-gradient(90deg, var(--brand-purple) 60%, var(--main-bg-dark) 100%);
   color: #fff;
 }
 
-/* Card border/shadow for polish */
 .card {
-  box-shadow: 0 2px 15px rgba(12,96,181,0.09);
+  box-shadow: 0 2px 15px rgba(108,54,169,0.09);
   border-radius: 18px;
 }
-
 .dark-mode .card {
-  box-shadow: 0 2px 13px rgba(12,96,181,0.07);
+  box-shadow: 0 2px 13px rgba(108,54,169,0.07);
 }
 
 h1, h2, h3 {
-  color: var(--brand-blue);
+  color: var(--brand-purple);
   font-family: inherit;
 }
 
-/* Responsive adjustments (optional!) */
 @media (max-width: 700px) {
   .hero-section {
     padding: 3rem 1rem;
@@ -94,5 +79,3 @@ h1, h2, h3 {
     padding: 1.4rem .9rem;
   }
 }
-
-/* You can keep adding custom classes for more sections/buttons/styles as needed */
