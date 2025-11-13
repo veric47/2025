@@ -4,7 +4,8 @@ export default function Services() {
     {
       title: "Construction",
       desc: "From concept to completion, we engineer and build infrastructure to global standards, delivering timely results and excellent quality for clients in commercial, industrial, and residential projects.",
-      icon: "🏗️"
+      icon: "🏗️",
+      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbullionriseconsult.com%2Festimate-cost-of-building-a-house-in-nigeria%2F&psig=AOvVaw3ws8dsbgl923wgRm2AH1dg&ust=1763104402214000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjyp_DJ7pADFQAAAAAdAAAAABAK"
     },
     {
       title: "Procurement",
@@ -118,6 +119,23 @@ export default function Services() {
         }}>
           We are dedicated to prompt, professional service and custom solutions for every challenge. Explore Accentuate’s proven expertise—your project, delivered safely, on time, and to the highest quality standards.
         </div>
+        {/* Icon Section */}
+<div style={{ /* icon style as before */}}>
+  {service.icon}
+</div>
+{/* Image section */}
+<img 
+  src={service.image}
+  alt={service.title}
+  style={{
+    width: "100px",
+    height: "85px",
+    objectFit: "cover",
+    borderRadius: "15px",
+    marginRight: "1rem"
+  }}
+/>
+
       </div>
     </section>
   );
