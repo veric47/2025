@@ -79,3 +79,17 @@ h1, h2, h3 {
     padding: 1.4rem .9rem;
   }
 }
+footer {
+  font-family: inherit;
+  background: var(--brand-purple);
+  color: #fff;
+}
+
+/* Responsive stacking for footer on mobile */
+@media (max-width: 700px) {
+  footer > div {
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 0 !important;
+  }
+}

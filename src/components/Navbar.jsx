@@ -2,30 +2,63 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const navStyle = {
-    backgroundColor: "#003366",
-    color: "white",
-    padding: "1rem 2rem",
+    background: "var(--brand-purple)", // Modern purple gradient or solid
+    color: "#fff",
+    padding: "1.2rem 2rem",
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center"
+    alignItems: "center",
+    boxShadow: "0 2px 18px rgba(108,54,169,0.09)",
+    position: "relative",
+    zIndex: 100
+  };
+
+  const brandStyle = {
+    fontSize: "2.1rem",
+    fontWeight: "700",
+    color: "#fff",
+    textDecoration: "none",
+    fontFamily: "inherit",
+    letterSpacing: "0.04em"
   };
 
   const linkContainer = {
     display: "flex",
-    gap: "2rem", // space between items
+    gap: "2rem",
+    listStyle: "none",
+    margin: 0,
+    padding: 0,
+    alignItems: "center"
+  };
+
+  const linkStyle = {
+    color: "#fff",
+    textDecoration: "none",
+    fontWeight: 500,
+    fontSize: "1.06rem",
+    position: "relative",
+    padding: "0.2rem 0.6rem",
+    transition: "color 0.3s"
+  };
+
+  // Optional: add hover underline for modern look
+  const activeLinkStyle = {
+    ...linkStyle,
+    borderBottom: "2px solid #ffcc33"
   };
 
   return (
     <nav style={navStyle}>
-      <Link to="/" style={{ fontSize: "1.5rem", fontWeight: "bold", color: "white", textDecoration: "none" }}>
+      <Link to="/" style={brandStyle}>
         Accentuate
       </Link>
       <ul style={linkContainer}>
-        {["Home", "About", "Services", "Projects", "Team", "Contact"].map((item) => (
+        {["Home", "About", "Services", "Projects", "Team", "Contact"].map((item, idx) => (
           <li key={item}>
             <Link
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              style={{ color: "white", textDecoration: "none" }}
+              style={linkStyle}
+              // use activeLinkStyle if you want to highlight active route (needs logic)
             >
               {item}
             </Link>
