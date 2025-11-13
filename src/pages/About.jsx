@@ -21,7 +21,7 @@ export default function About() {
           About Accentuate Integrated Services Limited
         </h1>
         <p 
-        className="section-intro-title"
+        className="section-intro-desc"
         style={{
           textAlign: "center",
           fontSize: "1.22rem",

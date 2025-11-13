@@ -7,7 +7,7 @@ export default function QualitySafety() {
         Quality & Safety
       </h1>
       <div 
-      className="section-intro-title"
+      className="section-intro-desc"
       style={{ marginTop: "2rem", textAlign: "left", maxWidth: 600, marginLeft: "auto", marginRight: "auto" }}>
         <h3>Quality Assurance</h3>
         <p>

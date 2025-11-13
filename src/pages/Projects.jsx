@@ -52,7 +52,7 @@ export default function Projects() {
           Our Projects
         </h1>
         <p 
-        className="section-intro-title"
+        className="section-intro-desc"
         style={{
           fontSize: "1.16rem",
           marginBottom: "2.8rem",
