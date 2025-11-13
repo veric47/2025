@@ -1,144 +1,203 @@
+// Home.js or Home.tsx
+
 export default function Home() {
   return (
-    <section className="themed-section" style={{ minHeight: "100vh", padding: "0", fontFamily: "inherit" }}>
-      <div className="hero-section" style={{
-        padding: "4rem 1rem 3rem 1rem",
-        textAlign: "left",
-        borderBottomLeftRadius: "60px",
-        borderBottomRightRadius: "60px"
-      }}>
-        <div style={{ maxWidth: "850px", margin: "0 auto" }}>
-          <h1 style={{ fontSize: "2.7rem", fontWeight: 700 }}>
+    <section
+      className="themed-section"
+      style={{ minHeight: "100vh", padding: "0", fontFamily: "inherit" }}
+    >
+      {/* Hero Section: Large Brand Banner, Bold CTA, nice gradient background */}
+      <div
+        className="hero-section"
+        style={{
+          background: "linear-gradient(90deg, #0c60b5 60%, #f8faff 100%)",
+          color: "#fff",
+          padding: "5rem 1.7rem 3rem 1.7rem",
+          textAlign: "left",
+          borderBottomLeftRadius: "65px",
+          borderBottomRightRadius: "65px",
+          boxShadow: "0 4px 80px rgba(12,96,181,0.10)",
+          position: "relative"
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "850px",
+            margin: "0 auto",
+            position: "relative",
+            zIndex: 2
+          }}
+        >
+          <h1 style={{ fontSize: "2.8rem", fontWeight: 700, marginBottom: "1.2rem", letterSpacing: ".01em" }}>
             Accentuate Integrated Services Limited
           </h1>
-          <p style={{
-            fontSize: "1.35rem",
-            fontWeight: 400,
-            marginTop: "1.5rem",
-            maxWidth: "600px",
-            color: "inherit"
-          }}>
-            Empowering your success with innovative engineering and turnkey solutions in Construction, Procurement, Energy Consulting, and beyond.
+          <p
+            style={{
+              fontSize: "1.4rem",
+              fontWeight: 400,
+              marginTop: "1.2rem",
+              maxWidth: "600px",
+              color: "#e8f1fb",
+              marginBottom: "2.6rem",
+            }}
+          >
+            Engineering innovation and turnkey solutions for success in construction, procurement, energy consulting, marine, and oil & gas—trusted for reliability, sustainability and excellence throughout Nigeria.
           </p>
-          <div style={{ marginTop: "2.7rem" }}>
-            <a href="/contact" style={{
+          <a
+            href="/contact"
+            style={{
               background: "#ffcc33",
-              color: "#003366",
+              color: "#0c60b5",
               fontWeight: 700,
               fontSize: "1.12rem",
-              borderRadius: "8px",
-              padding: "0.85rem 2.3rem",
+              borderRadius: "9px",
+              padding: "1.05rem 2.6rem",
               textDecoration: "none",
-              boxShadow: "0 4px 16px rgba(0,0,0,0.09)"
-            }}>
-              Get in Touch
-            </a>
-          </div>
+              boxShadow: "0 6px 36px rgba(12,96,181,0.09)",
+              transition: "background .3s, color .3s",
+              display: "inline-block"
+            }}
+          >
+            Get in Touch
+          </a>
         </div>
       </div>
 
-      <div style={{
-        display: "flex",
-        gap: "2rem",
-        justifyContent: "center",
-        flexWrap: "wrap",
-        marginTop: "-3rem",
-        maxWidth: "1000px",
-        marginLeft: "auto",
-        marginRight: "auto"
-      }}>
+      {/* Highlights */}
+      <div
+        style={{
+          display: "flex",
+          gap: "2rem",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          marginTop: "-3rem",
+          maxWidth: "1040px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          position: "relative",
+          zIndex: 2
+        }}
+      >
         {[
           {
             title: "Engineering Excellence",
-            desc: "Over 15 years of delivering robust solutions in Nigeria’s vital sectors.",
+            desc: "Over 15 years of robust solutions and sector leadership.",
             icon: "🛠️"
           },
           {
             title: "Turnkey Project Delivery",
-            desc: "From initial concept to handover, we manage and execute with precision.",
+            desc: "From concept to handover, exact project management for results.",
             icon: "🚀"
           },
           {
             title: "Client-Centric Approach",
-            desc: "Your unique needs drive our tailored, value-added solutions.",
+            desc: "Your needs drive our tailored, value-added solutions every time.",
             icon: "🤝"
           }
         ].map(({ title, desc, icon }) => (
-          <div key={title} className="card" style={{
-            borderRadius: "16px",
-            boxShadow: "0 2px 12px rgba(0,51,102,0.07)",
-            minWidth: "220px",
-            maxWidth: "320px",
-            padding: "2rem 1.3rem",
-            flex: "1 0 220px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center"
-          }}>
-            <div style={{
-              width: "56px",
-              height: "56px",
-              marginBottom: "1rem",
-              fontSize: "2.2rem",
+          <div
+            key={title}
+            className="card"
+            style={{
+              borderRadius: "18px",
+              background: "#fff",
+              boxShadow: "0 2px 13px rgba(12,96,181,0.07)",
+              minWidth: "240px",
+              maxWidth: "340px",
+              padding: "2.1rem 1.5rem",
+              flex: "1 0 220px",
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              background: "#eaf0fa",
-              borderRadius: "50%"
-            }}>
+              flexDirection: "column",
+              alignItems: "center"
+            }}
+          >
+            <div
+              style={{
+                width: "60px",
+                height: "60px",
+                marginBottom: "1.1rem",
+                fontSize: "2.3rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "#eaf0fa",
+                borderRadius: "50%"
+              }}
+            >
               {icon}
             </div>
-            <h3 style={{
-              fontWeight: 700,
-              fontSize: "1.15rem",
-              color: "#003366",
-              margin: "0.3rem 0"
-            }}>{title}</h3>
-            <p style={{
-              color: "inherit",
-              fontSize: "1.05rem",
-              margin: 0,
-              textAlign: "center"
-            }}>{desc}</p>
+            <h3
+              style={{
+                fontWeight: 700,
+                fontSize: "1.2rem",
+                color: "#0c60b5",
+                margin: "0.3rem 0"
+              }}
+            >
+              {title}
+            </h3>
+            <p
+              style={{
+                color: "#444",
+                fontSize: "1.07rem",
+                margin: 0,
+                textAlign: "center"
+              }}
+            >
+              {desc}
+            </p>
           </div>
         ))}
       </div>
 
-      <div className="card" style={{
-        maxWidth: "960px",
-        margin: "3rem auto 0 auto",
-        padding: "2.5rem 1rem",
-        borderRadius: "18px",
-        boxShadow: "0 2px 15px rgba(0,51,102,0.08)",
-        textAlign: "center"
-      }}>
-        <h2 style={{
-          color: "#003366",
-          fontWeight: 700,
-          fontSize: "1.65rem",
-          marginBottom: "1.3rem"
-        }}>
+      {/* Our Services - modern info block */}
+      <div
+        className="card"
+        style={{
+          maxWidth: "960px",
+          margin: "3.5rem auto 0 auto",
+          padding: "2.6rem 1.2rem",
+          borderRadius: "22px",
+          background: "#fff",
+          boxShadow: "0 2px 18px rgba(12,96,181,0.09)",
+          textAlign: "center"
+        }}
+      >
+        <h2
+          style={{
+            color: "#0c60b5",
+            fontWeight: 700,
+            fontSize: "1.75rem",
+            marginBottom: "1.2rem"
+          }}
+        >
           Our Services
         </h2>
-        <p style={{
-          color: "inherit",
-          fontSize: "1.14rem",
-          marginBottom: "2.2rem",
-          maxWidth: "690px",
-          marginLeft: "auto",
-          marginRight: "auto"
-        }}>
-          We deliver a full spectrum of solutions: Construction, Procurement, Energy Consulting, Equipment Leasing, Pipeline Maintenance, Marine Support, and Oil & Gas Services. Explore what Accentuate can do for your next project, from concept to commissioning.
+        <p
+          style={{
+            color: "#444",
+            fontSize: "1.17rem",
+            marginBottom: "2.4rem",
+            maxWidth: "690px",
+            marginLeft: "auto",
+            marginRight: "auto"
+          }}
+        >
+          We deliver a full range of solutions: Construction, Procurement, Energy Consulting, Equipment Leasing, Pipeline Maintenance, Marine Support, and Oil & Gas Services. Discover how Accentuate powers project success from concept to commissioning.
         </p>
-        <a href="/services" style={{
-          color: "#fff",
-          background: "#003366",
-          padding: "0.85rem 2.3rem",
-          fontWeight: 700,
-          borderRadius: "8px",
-          textDecoration: "none",
-          fontSize: "1.1rem"
-        }}>
+        <a
+          href="/services"
+          style={{
+            color: "#fff",
+            background: "#0c60b5",
+            padding: "1rem 2.4rem",
+            fontWeight: 700,
+            borderRadius: "10px",
+            textDecoration: "none",
+            fontSize: "1.13rem",
+            boxShadow: "0 2px 12px rgba(12,96,181,0.12)"
+          }}
+        >
           Discover More
         </a>
       </div>
