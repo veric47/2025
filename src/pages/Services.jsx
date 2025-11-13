@@ -5,7 +5,7 @@ export default function Services() {
       title: "Construction",
       desc: "From concept to completion, we engineer and build infrastructure to global standards, delivering timely results and excellent quality for clients in commercial, industrial, and residential projects.",
       icon: "🏗️",
-      image: "https://www.google.com/imgres?q=construction%20buildings%20workers&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Fconstruction-worker-wearing-yellow-hard-600nw-2492762443.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fconstruction-worker-building&docid=3lDc4yxocpFdSM&tbnid=HZynMG4DMQTkqM&vet=12ahUKEwjExu3fyO-QAxXydUEAHQx6LDgQM3oECCAQAA..i&w=600&h=337&hcb=2&ved=2ahUKEwjExu3fyO-QAxXydUEAHQx6LDgQM3oECCAQAA"
+      image: "https://cdn.businessday.ng/2021/02/Building-construction.jpg"
     },
     {
       title: "Procurement",
