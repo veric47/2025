@@ -26,9 +26,17 @@ export default function Home() {
             zIndex: 2
           }}
         >
-          <h1 style={{ fontSize: "2.8rem", fontWeight: 700, marginBottom: "1.2rem", letterSpacing: ".01em" }}>
-            Accentuate Integrated Services Limited
-          </h1>
+          <h1 style={{
+  fontSize: "2.8rem",
+  fontWeight: 700,
+  marginBottom: "1.2rem",
+  letterSpacing: ".01em",
+  color: "#fff", // High-contrast white for dark or purple backgrounds
+  textShadow: "0 2px 6px rgba(108,54,169,0.16)", // Soft purple glow for separation
+}}>
+  Accentuate Integrated Services Limited
+</h1>
+
           <p
             style={{
               fontSize: "1.4rem",
