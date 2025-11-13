@@ -119,23 +119,6 @@ export default function Services() {
         }}>
           We are dedicated to prompt, professional service and custom solutions for every challenge. Explore Accentuate’s proven expertise—your project, delivered safely, on time, and to the highest quality standards.
         </div>
-        {/* Icon Section */}
-<div style={{ /* icon style as before */}}>
-  {service.icon}
-</div>
-{/* Image section */}
-<img 
-  src={service.image}
-  alt={service.title}
-  style={{
-    width: "100px",
-    height: "85px",
-    objectFit: "cover",
-    borderRadius: "15px",
-    marginRight: "1rem"
-  }}
-/>
-
       </div>
     </section>
   );
