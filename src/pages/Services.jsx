@@ -23,7 +23,7 @@ export default function Services() {
       title: "Equipment Leasing",
       desc: "Flexible leasing options for modern equipment and vehicles, helping clients optimize project delivery and reduce costs with reliable, well-maintained assets.",
       icon: "🚜",
-      image: "https://cdn.businessday.ng/2023/07/kAdFdovG-Cross-Section-of-the-200m-Kano-Maradi-Rail-project-Equipment-handled-by-PCHS.png"
+      image: "https://www.elease.com/wp-content/uploads/2020/05/heavy-equipment-leasing.jpg.webp"
     },
     {
       title: "Marine & Oil/Gas Support",
