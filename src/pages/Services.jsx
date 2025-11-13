@@ -1,31 +1,35 @@
 export default function Services() {
-  // Service data: Alternate by index for direction
+  // Service data: Add image for each, or leave undefined/null if unavailable
   const services = [
     {
       title: "Construction",
       desc: "From concept to completion, we engineer and build infrastructure to global standards, delivering timely results and excellent quality for clients in commercial, industrial, and residential projects.",
       icon: "🏗️",
-      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbullionriseconsult.com%2Festimate-cost-of-building-a-house-in-nigeria%2F&psig=AOvVaw3ws8dsbgl923wgRm2AH1dg&ust=1763104402214000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjyp_DJ7pADFQAAAAAdAAAAABAK"
+      image: "https://www.google.com/imgres?q=construction%20buildings%20workers&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Fconstruction-worker-wearing-yellow-hard-600nw-2492762443.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fconstruction-worker-building&docid=3lDc4yxocpFdSM&tbnid=HZynMG4DMQTkqM&vet=12ahUKEwjExu3fyO-QAxXydUEAHQx6LDgQM3oECCAQAA..i&w=600&h=337&hcb=2&ved=2ahUKEwjExu3fyO-QAxXydUEAHQx6LDgQM3oECCAQAA"
     },
     {
       title: "Procurement",
       desc: "We supply high-quality materials and equipment across diverse industries, combining global sourcing and efficient logistics to meet client specifications and enhance operational efficiency.",
-      icon: "📦"
+      icon: "📦",
+      image: "https://unsplash.com/photos/seven-construction-workers-standing-on-white-field-x-ghf9LjrVg"
     },
     {
       title: "Energy Consulting",
       desc: "Our experts provide technical advice, feasibility studies, and implementation for renewable, conventional, and hybrid energy solutions—ensuring efficiency, sustainability, and compliance for every project.",
-      icon: "💡"
+      icon: "💡",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Equipment Leasing",
       desc: "Flexible leasing options for modern equipment and vehicles, helping clients optimize project delivery and reduce costs with reliable, well-maintained assets.",
-      icon: "🚜"
+      icon: "🚜",
+      image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Marine & Oil/Gas Support",
       desc: "Support services from pipeline maintenance to vessel leasing and logistics, delivered by specialized teams and proven methods for safe, efficient operations in marine and energy sectors.",
-      icon: "⚓"
+      icon: "⚓",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80"
     }
   ];
 
@@ -66,19 +70,43 @@ export default function Services() {
                 marginBottom: "2.3rem"
               }}
             >
-              {/* Icon Section */}
+              {/* Icon & Image Section */}
               <div style={{
-                flex: "0 0 85px",
-                height: "85px",
-                background: "#eaf0fa",
-                borderRadius: "50%",
+                flex: "0 0 120px",
                 display: "flex",
+                flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "center",
-                fontSize: "2.15rem",
-                color: "#003366"
               }}>
-                {service.icon}
+                <div
+                  style={{
+                    background: "#eaf0fa",
+                    borderRadius: "50%",
+                    width: "60px",
+                    height: "60px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "2rem",
+                    color: "#003366",
+                    marginBottom: "10px"
+                  }}
+                >
+                  {service.icon}
+                </div>
+                {/* Only render img if it exists */}
+                {service.image &&
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    style={{
+                      width: "90px",
+                      height: "60px",
+                      objectFit: "cover",
+                      borderRadius: "10px",
+                      marginTop: "10px"
+                    }}
+                  />
+                }
               </div>
               {/* Content Section */}
               <div className="card" style={{
@@ -118,7 +146,7 @@ export default function Services() {
           maxWidth: "700px"
         }}>
           We are dedicated to prompt, professional service and custom solutions for every challenge. Explore Accentuate’s proven expertise—your project, delivered safely, on time, and to the highest quality standards.
-        </div>  
+        </div>
       </div>
     </section>
   );
