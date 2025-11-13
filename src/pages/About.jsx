@@ -9,28 +9,27 @@ export default function About() {
       <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "1.5rem 1rem 4rem 1rem" }}>
         {/* Page Title & Tagline */}
         <h1 
-        className="section-intro-title"
-        style={{
-          textAlign: "center",
-          fontSize: "2.8rem",
-          fontWeight: 900,
-          marginBottom: "1.5rem",
-          letterSpacing: ".03em"
-        }}>
+          className="section-intro-title"
+          style={{
+            textAlign: "center",
+            fontSize: "2.8rem",
+            fontWeight: 900,
+            marginBottom: "1.5rem",
+            letterSpacing: ".03em"
+          }}>
           About Accentuate Integrated Services Limited
         </h1>
         <p 
-        className="section-intro-desc"
-        style={{
-          textAlign: "center",
-          fontSize: "1.22rem",
-          fontWeight: 500,
-          marginBottom: "2rem",
-          maxWidth: "700px",
-          margin: "0 auto 2.2rem auto"
-        }}>
-          Building Nigeria’s future through technology, expertise, and commitment.<br />
-          Delivering innovative engineering solutions, reliable project completion, and lasting value in construction, energy, marine, and oil/gas.
+          className="section-intro-desc"
+          style={{
+            textAlign: "center",
+            fontSize: "1.22rem",
+            fontWeight: 500,
+            marginBottom: "2rem",
+            maxWidth: "700px",
+            margin: "0 auto 2.2rem auto"
+          }}>
+          Building Nigeria’s future through technology, expertise, and commitment. Delivering innovative engineering solutions, reliable project completion, and lasting value in construction, energy, marine, and oil/gas.
         </p>
         <div style={{
           display: "inline-block",
@@ -65,7 +64,7 @@ export default function About() {
           <div style={{background: "#241d39", borderRadius: "13px", padding: "1.3rem"}}>
             <h3 style={{color: "#19C37D", fontWeight: 700}}>2010</h3>
             <div style={{fontWeight: 600, color: "#fff"}}>Founded</div>
-            <p style={{color: "#ede5fa"}}>Started engineering services, laying the foundation for growth.</p>
+            <p style={{color: "#ede5fa"}}>Started engineering services, laying our foundation for growth.</p>
           </div>
           <div style={{background: "#241d39", borderRadius: "13px", padding: "1.3rem"}}>
             <h3 style={{color: "#19C37D", fontWeight: 700}}>2012</h3>
@@ -75,7 +74,7 @@ export default function About() {
           <div style={{background: "#241d39", borderRadius: "13px", padding: "1.3rem"}}>
             <h3 style={{color: "#19C37D", fontWeight: 700}}>2017</h3>
             <div style={{fontWeight: 600, color: "#fff"}}>Energy Consulting Division</div>
-            <p style={{color: "#ede5fa"}}>Added renewables & hybrid solutions for clients.</p>
+            <p style={{color: "#ede5fa"}}>Added renewables & hybrid solutions for clients nationwide.</p>
           </div>
           <div style={{background: "#241d39", borderRadius: "13px", padding: "1.3rem"}}>
             <h3 style={{color: "#19C37D", fontWeight: 700}}>2023+</h3>
@@ -84,82 +83,53 @@ export default function About() {
           </div>
         </div>
 
-        {/* Vision & Mission - modern blocks */}
+        {/* Vision & Mission as two cards, humanized */}
         <div style={{
           display: "flex",
-          flexWrap: "wrap",
-          gap: "2rem",
+          gap: "2.3rem",
           justifyContent: "center",
-          alignItems: "stretch",
-          marginBottom: "2.3rem"
+          flexWrap: "wrap",
+          marginBottom: "2.4rem"
         }}>
+          {/* Vision */}
           <div style={{
             background: "#fff",
             border: "2px solid #6C36A9",
             borderRadius: "15px",
-            padding: "2rem",
+            padding: "2rem 1.5rem",
             minWidth: "260px",
             boxShadow: "0 2px 12px rgba(108,54,169,0.08)",
             flex: "1 1 330px",
             display: "flex",
-            alignItems: "center",
-            gap: "1.5rem"
+            flexDirection: "column",
+            alignItems: "center"
           }}>
-            <div style={{
-              flex: "0 0 82px",
-              height: "82px",
-              background: "#ede5fa",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "2.12rem",
-              color: "#6C36A9"
-            }}>
-              🦾
-            </div>
-            <div>
-              <h2 style={{
-                color: "#6C36A9", fontWeight: 700, fontSize: "1.23rem", marginBottom: "1rem"
-              }}>Our Vision</h2>
-              <p style={{ fontSize: "1.07rem", color: "#222", margin: 0 }}>
-                Ensure all-round unique service delivery that makes us the first-choice call for client and employee.
-              </p>
-            </div>
+            <h2 style={{
+              color: "#6C36A9", fontWeight: 700, fontSize: "1.23rem", marginBottom: "1rem"
+            }}>Our Vision</h2>
+            <p style={{ fontSize: "1.09rem", color: "#222", margin: 0, textAlign: "center" }}>
+              To become the benchmark for reliability, quality, and client satisfaction in engineering, construction, and energy sectors, helping transform communities and inspire the next generation of innovators.
+            </p>
           </div>
+          {/* Mission */}
           <div style={{
             background: "#fff",
             border: "2px solid #6C36A9",
             borderRadius: "15px",
-            padding: "2rem",
+            padding: "2rem 1.5rem",
             minWidth: "260px",
             boxShadow: "0 2px 12px rgba(108,54,169,0.08)",
             flex: "1 1 330px",
             display: "flex",
-            alignItems: "center",
-            gap: "1.5rem"
+            flexDirection: "column",
+            alignItems: "center"
           }}>
-            <div style={{
-              flex: "0 0 82px",
-              height: "82px",
-              background: "#ede5fa",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "2.12rem",
-              color: "#6C36A9"
-            }}>
-              🎯
-            </div>
-            <div>
-              <h2 style={{
-                color: "#6C36A9", fontWeight: 700, fontSize: "1.23rem", marginBottom: "1rem"
-              }}>Our Mission</h2>
-              <p style={{ fontSize: "1.07rem", color: "#222", margin: 0 }}>
-                To provide the best of service with integrity and ensure provision of consistent added value for our Client and Team with the best global practice.
-              </p>
-            </div>
+            <h2 style={{
+              color: "#6C36A9", fontWeight: 700, fontSize: "1.23rem", marginBottom: "1rem"
+            }}>Our Mission</h2>
+            <p style={{ fontSize: "1.09rem", color: "#222", margin: 0, textAlign: "center" }}>
+              To deliver innovative and sustainable solutions with integrity—empowering our clients and team through excellence, safety, and a genuine commitment to progress in every project we undertake.
+            </p>
           </div>
         </div>
 
