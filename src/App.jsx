@@ -14,7 +14,7 @@ function Navbar({ toggleTheme, darkMode }) {
 
   const navStyle = {
     background: "linear-gradient(90deg, var(--brand-purple) 80%, #191f2b 100%)",
-    color: "#fff",
+     
     padding: "1.15rem 2rem",
     display: "flex",
     justifyContent: "space-between",
