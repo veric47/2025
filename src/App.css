@@ -98,3 +98,7 @@ footer {
   color: #fff;
   /* ...other styles */
 }
+* {
+  border: none !important;
+  outline: none !important;
+}

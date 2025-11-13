@@ -12,6 +12,9 @@ export default function Home() {
           color: "#fff",
           padding: "5rem 1.7rem 3rem 1.7rem",
           textAlign: "left",
+          borderBottomLeftRadius: "65px",
+          borderBottomRightRadius: "65px",
+          boxShadow: "0 4px 80px rgba(108,54,169,0.10)",
           position: "relative"
         }}
       >
