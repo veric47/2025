@@ -34,30 +34,35 @@ export default function Services() {
   ];
 
   return (
-    <section className="themed-section" style={{ minHeight: "100vh", padding: "3rem 1rem", fontFamily: "inherit" }}>
-      <div style={{ maxWidth: "950px", margin: "0 auto" }}>
-        {/* Left-aligned intro */}
+    <section className="themed-section" style={{
+      minHeight: "100vh",
+      background: "linear-gradient(120deg, #6C36A9 40%, #191f2b 100%)",
+      padding: "0",
+      fontFamily: "inherit"
+    }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "2.7rem 1rem 3rem 1rem" }}>
+        {/* Page Intro */}
         <h1 style={{
           textAlign: "left",
-          color: "#003366",
-          fontSize: "2.3rem",
-          fontWeight: 700,
-          marginBottom: "1.2rem"
+          color: "#fff",
+          fontSize: "2.38rem",
+          fontWeight: 800,
+          marginBottom: "1.35rem"
         }}>
           Our Services
         </h1>
         <p style={{
           textAlign: "left",
-          fontSize: "1.13rem",
-          color: "#444",
-          marginBottom: "2.6rem",
+          fontSize: "1.15rem",
+          color: "#ede5fa",
+          marginBottom: "2.65rem",
           fontWeight: 500,
-          maxWidth: "580px"
+          maxWidth: "600px"
         }}>
-          Accentuate Integrated Services delivers high-value engineering and consulting across Nigeria’s construction, procurement, energy, marine, and oil & gas sectors. Our comprehensive solutions combine skilled manpower, advanced technology, and a culture of excellence to drive client success in every project.
+          Accentuate delivers high-value engineering, procurement, energy, equipment leasing, and marine solutions. Our advanced technology, skilled manpower, and commitment to excellence drive project success for every client.
         </p>
         
-        {/* Service cards: alternate left/right alignment */}
+        {/* Services Blocks */}
         <div>
           {services.map((service, idx) => (
             <div
@@ -67,28 +72,32 @@ export default function Services() {
                 flexDirection: idx % 2 === 0 ? "row" : "row-reverse",
                 alignItems: "center",
                 gap: "2.2rem",
-                marginBottom: "2.3rem"
+                marginBottom: "3.28rem",
+                background: "#241d39",
+                borderRadius: "16px",
+                boxShadow: "0 2px 12px rgba(108,54,169,0.09)",
+                padding: "2.1rem 1.2rem"
               }}
             >
               {/* Icon & Image Section */}
               <div style={{
-                flex: "0 0 120px",
+                flex: "0 0 155px",
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
+                alignItems: "center"
               }}>
                 <div
                   style={{
-                    background: "#eaf0fa",
+                    background: "#ede5fa",
                     borderRadius: "50%",
-                    width: "60px",
-                    height: "60px",
+                    width: "70px",
+                    height: "70px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     fontSize: "2rem",
-                    color: "#003366",
-                    marginBottom: "10px"
+                    color: "#6C36A9",
+                    marginBottom: "9px"
                   }}
                 >
                   {service.icon}
@@ -99,11 +108,12 @@ export default function Services() {
                     src={service.image}
                     alt={service.title}
                     style={{
-                      width: "90px",
-                      height: "60px",
+                      width: "112px",
+                      height: "72px",
                       objectFit: "cover",
-                      borderRadius: "10px",
-                      marginTop: "10px"
+                      borderRadius: "11px",
+                      marginTop: "12px",
+                      boxShadow: "0 2px 10px rgba(25,195,125,0.10)"
                     }}
                   />
                 }
@@ -111,20 +121,20 @@ export default function Services() {
               {/* Content Section */}
               <div className="card" style={{
                 background: "#fff",
-                borderRadius: "15px",
-                boxShadow: "0 2px 12px rgba(0,51,102,0.09)",
-                padding: "1.5rem 1.2rem",
+                borderRadius: "13px",
+                boxShadow: "0 2px 12px rgba(108,54,169,0.11)",
+                padding: "1rem 1.2rem",
                 flex: "1 1 0%"
               }}>
                 <h2 style={{
-                  color: "#003366",
-                  fontWeight: "bold",
-                  fontSize: "1.13rem",
-                  marginBottom: "0.7rem"
+                  color: "#6C36A9",
+                  fontWeight: 700,
+                  fontSize: "1.19rem",
+                  marginBottom: "0.9rem"
                 }}>{service.title}</h2>
                 <p style={{
                   color: "#444",
-                  fontSize: "0.99rem",
+                  fontSize: "1.04rem",
                   margin: 0
                 }}>{service.desc}</p>
               </div>
@@ -135,14 +145,14 @@ export default function Services() {
         {/* Centered call-to-action */}
         <div style={{
           background: "#19C37D",
-          color: "#003366",
+          color: "#191f2b",
           borderRadius: "18px",
-          padding: "1.6rem 1rem",
+          padding: "2rem 1.18rem",
           textAlign: "center",
           fontWeight: 700,
           fontSize: "1.17rem",
           margin: "2.5rem auto 0 auto",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+          boxShadow: "0 2px 8px rgba(25,195,125,0.08)",
           maxWidth: "700px"
         }}>
           We are dedicated to prompt, professional service and custom solutions for every challenge. Explore Accentuate’s proven expertise—your project, delivered safely, on time, and to the highest quality standards.
