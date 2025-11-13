@@ -7,6 +7,24 @@
   --accent-green: #19C37D;   /* Vibrant, modern green */
 }
 
+/* REMOVE default body and container margin (fixes white border!) */
+html, body, #root {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: var(--main-bg-light);
+  box-sizing: border-box;
+}
+
+/* Remove border/padding from all immediate wrappers if using */
+.app-root, .main-app, main, section, .container {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-sizing: border-box;
+}
+
 body, .light-mode, .light-mode .themed-section {
   background: var(--main-bg-light);
   color: var(--txt-light);
@@ -71,7 +89,7 @@ footer {
   border: none;
   box-shadow: 0 -2px 18px rgba(108,54,169,0.09);
   font-family: inherit;
-  border-radius: 0 0 0 0;
+  border-radius: 0;
 }
 footer a:hover {
   text-decoration: underline;
@@ -121,4 +139,5 @@ footer .footer-bottom {
 * {
   border: none !important;
   outline: none !important;
+  box-sizing: border-box;
 }
