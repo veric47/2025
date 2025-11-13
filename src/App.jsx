@@ -10,14 +10,12 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  // Start with system color scheme
   const getSystemTheme = () =>
     window.matchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   const [darkMode, setDarkMode] = useState(getSystemTheme);
 
-  // Update theme if system changes (unless manually toggled)
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)');
     const handler = (e) => setDarkMode(e.matches);
@@ -25,29 +23,82 @@ function App() {
     return () => media.removeEventListener('change', handler);
   }, []);
 
-  // Manual override handler
-  const toggleTheme = () => setDarkMode((prev) => !prev);
+  const toggleTheme = () => setDarkMode(prev => !prev);
+
+  // Responsive navbar styles (can be lifted to CSS for large apps)
+  const navStyle = {
+    background: "var(--brand-purple)",
+    color: "#fff",
+    padding: "1.2rem 2rem",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    boxShadow: "0 2px 18px rgba(108,54,169,0.09)",
+    position: "relative",
+    zIndex: 100
+  };
+
+  const brandStyle = {
+    fontSize: "2rem",
+    fontWeight: "bold",
+    color: "#fff",
+    textDecoration: "none",
+    fontFamily: "inherit",
+    letterSpacing: "0.04em"
+  };
+
+  const linkContainer = {
+    display: "flex",
+    gap: "1.9rem",
+    listStyle: "none",
+    margin: 0,
+    padding: 0,
+    alignItems: "center"
+  };
+
+  const linkStyle = {
+    color: "#fff",
+    textDecoration: "none",
+    fontWeight: 500,
+    fontSize: "1.07rem",
+    position: "relative",
+    padding: "0.2rem 0.8rem",
+    transition: "color 0.3s"
+  };
+
+  const buttonStyle = {
+    background: "var(--accent-yellow)",
+    color: "var(--brand-purple)",
+    border: "none",
+    borderRadius: "19px",
+    fontWeight: 700,
+    padding: "7px 26px",
+    marginLeft: "2rem",
+    fontSize: "1rem",
+    cursor: "pointer",
+    boxShadow: "0 2px 12px rgba(108,54,169,0.15)"
+  };
 
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"} style={{ minHeight: "100vh" }}>
       <Router>
-        <nav style={{ padding: "20px", background: "#0c60b5ff", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div>
-            <Link to="/">Home</Link> |{" "}
-            <Link to="/about">About</Link> |{" "}
-            <Link to="/services">Services</Link> |{" "}
-            <Link to="/projects">Projects</Link> |{" "}
-            <Link to="/team">Team</Link> |{" "}
-            <Link to="/quality-safety">Quality & Safety</Link> |{" "}
-            <Link to="/contact">Contact</Link>
-          </div>
-          {/* Theme Toggle Button */}
+        <nav style={navStyle}>
+          {/* Brand/Logo Left */}
+          <Link to="/" style={brandStyle}>Accentuate</Link>
+          {/* Links Right */}
+          <ul style={linkContainer}>
+            <li><Link to="/" style={linkStyle}>Home</Link></li>
+            <li><Link to="/about" style={linkStyle}>About</Link></li>
+            <li><Link to="/services" style={linkStyle}>Services</Link></li>
+            <li><Link to="/projects" style={linkStyle}>Projects</Link></li>
+            <li><Link to="/team" style={linkStyle}>Team</Link></li>
+            <li><Link to="/quality-safety" style={linkStyle}>Quality & Safety</Link></li>
+            <li><Link to="/contact" style={linkStyle}>Contact</Link></li>
+          </ul>
+          {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            style={{
-              background: "none", color: "#fff", border: "1px solid #ffc", borderRadius: "16px",
-              padding: "5px 18px", cursor: "pointer", fontWeight: 700
-            }}
+            style={buttonStyle}
           >
             {darkMode ? "Light Mode" : "Dark Mode"}
           </button>
