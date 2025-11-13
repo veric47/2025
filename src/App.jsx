@@ -56,7 +56,7 @@ function Navbar({ toggleTheme, darkMode }) {
 
   const buttonStyle = {
     background: "var(--accent-green)",
-    color: "#fff",
+     
     border: "none",
     borderRadius: "19px",
     fontWeight: 700,
