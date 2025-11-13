@@ -23,13 +23,13 @@ export default function Services() {
       title: "Equipment Leasing",
       desc: "Flexible leasing options for modern equipment and vehicles, helping clients optimize project delivery and reduce costs with reliable, well-maintained assets.",
       icon: "🚜",
-      image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&q=80"
+      image: "https://boilecon.com/wp-content/uploads/2025/05/service_main-image_equipment-leasing.jpg"
     },
     {
       title: "Marine & Oil/Gas Support",
       desc: "Support services from pipeline maintenance to vessel leasing and logistics, delivered by specialized teams and proven methods for safe, efficient operations in marine and energy sectors.",
       icon: "⚓",
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80"
+      image: "https://loyzmarine.com/wp-content/uploads/2024/07/Rectangle-34624369-1.png"
     }
   ];
 
