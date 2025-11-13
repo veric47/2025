@@ -12,7 +12,6 @@ export default function About() {
         className="section-intro-title"
         style={{
           textAlign: "center",
-          color: "#fff",
           fontSize: "2.8rem",
           fontWeight: 900,
           marginBottom: "1.5rem",
@@ -25,7 +24,6 @@ export default function About() {
         style={{
           textAlign: "center",
           fontSize: "1.22rem",
-          color: "#ede5fa",
           fontWeight: 500,
           marginBottom: "2rem",
           maxWidth: "700px",
