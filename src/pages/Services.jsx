@@ -43,6 +43,7 @@ export default function Services() {
         {/* Page Intro */}
         <h1 className="section-intro-title"
           style={{
+            color: "#6C36A9",
             textAlign: "left",
             fontSize: "2.38rem",
             fontWeight: 800,

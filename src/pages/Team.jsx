@@ -13,7 +13,7 @@ export default function Team() {
     <section className="themed-section" style={{ minHeight: "100vh", padding: "4rem 1rem" }}>
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <h1 className="section-intro-title"
-          style={{ fontSize: "2rem", fontWeight: "bold", textAlign: "center" }}>
+          style={{ color: "#6C36A9", fontSize: "2rem", fontWeight: "bold", textAlign: "center" }}>
           Our Team
         </h1>
         <p className="section-intro-desc"

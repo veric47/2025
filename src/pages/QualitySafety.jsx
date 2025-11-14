@@ -3,7 +3,7 @@ export default function QualitySafety() {
     <section className="themed-section" style={{ textAlign: "center", padding: "4rem 1rem" }}>
       <h1 
       className="section-intro-title"
-      style={{ fontSize: "2rem", fontWeight: "bold" }}>
+      style={{ color: "#6C36A9", fontSize: "2rem", fontWeight: "bold" }}>
         Quality & Safety
       </h1>
       <div 

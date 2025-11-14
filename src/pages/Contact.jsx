@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section className="themed-section" style={{ textAlign: "center", padding: "4rem 1rem" }}>
-      <h1 style={{ color: "#003366", fontSize: "2rem", fontWeight: "bold" }}>
+      <h1 style={{ color: "#6C36A9", fontSize: "2rem", fontWeight: "bold" }}>
         Contact Us
       </h1>
       <div style={{ marginTop: "2rem" }}>
