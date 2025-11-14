@@ -46,8 +46,9 @@ export default function Contact() {
         }}>
           <div>
             <strong style={{ color: "#19C37D" }}>Head Office</strong><br />
-            <span style={{color:"#000000ff"}}></span>
+            <span style={{color:"#000000ff"}}>
             6 Lolo Street, Ozuboko, Port Harcourt, Rivers State, Nigeria
+            </span>
           </div>
           <div>
             <strong style={{ color: "#19C37D" }}>Phone</strong><br />
