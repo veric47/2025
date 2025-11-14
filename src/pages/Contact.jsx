@@ -46,6 +46,7 @@ export default function Contact() {
         }}>
           <div>
             <strong style={{ color: "#19C37D" }}>Head Office</strong><br />
+            <span style={{color:"#000000ff"}}></span>
             6 Lolo Street, Ozuboko, Port Harcourt, Rivers State, Nigeria
           </div>
           <div>
@@ -60,7 +61,9 @@ export default function Contact() {
           </div>
           <div>
             <strong style={{ color: "#19C37D" }}>Office Hours</strong><br />
+            <span style={{color:"#000000ff"}}>
             Mon - Fri : 09:00 - 18:00
+            </span>
           </div>
         </div>
         <div style={{
