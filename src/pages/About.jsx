@@ -30,7 +30,7 @@ export default function About() {
         <h1 
           className="section-intro-title"
           style={{
-            olor: "#6C36A9",
+            color: "#6C36A9",
             textAlign: "center",
             fontSize: "2.9rem",
             fontWeight: 900,
