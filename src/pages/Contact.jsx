@@ -42,8 +42,9 @@ export default function Contact() {
         </div>
         <div style={{marginBottom: "1.45rem"}}>
           <div style={{fontWeight: 600, color: "#19C37D", marginBottom: "4px"}}>Head Office</div>
-          <div style={{lineHeight: 1.4}}>
+          <div style={{lineHeight: 1.4}}> <span style={{color:"#000000ff"}}>
             6 Lolo Street, Ozuboko, Port Harcourt, Rivers State. Nigeria
+          </span>
           </div>
         </div>
         <div style={{marginBottom: "1.35rem"}}>
@@ -62,7 +63,11 @@ export default function Contact() {
         </div>
         <div style={{marginBottom: "2.1rem"}}>
           <div style={{fontWeight: 600, color: "#19C37D", marginBottom: "4px"}}>Office Hours</div>
-          <div>Mon - Fri: 09:00 - 18:00</div>
+          <div> <span style={{color:"#000000ff"}}>
+            Mon - Fri: 09:00 - 18:00
+            </span>
+            </div>
+           
         </div>
         <div style={{
           fontSize: ".97rem",
